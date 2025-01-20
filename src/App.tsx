@@ -79,7 +79,7 @@ function App() {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
         <div className="container mx-auto px-6 py-4 bg-white-500">  {/* Added background color for visibility */}
           <div className="flex items-center justify-between">
-            <img src="/dist/assets/images/name logo image.png" alt="Portfolio" className="w-34 h-16" />
+            <img src="/images/name logo image.png" alt="Portfolio" className="w-34 h-16" />
             <div className="flex space-x-8"> {/* Changed hidden md:flex to just flex */}
               {['home', 'about', 'education', 'skills', 'projects', 'contact'].map((section) => (
                 <button
