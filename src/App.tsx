@@ -53,14 +53,14 @@ function App() {
     {
       title: 'Mini E-Commerce Platform',
       description: 'A full-stack e-commerce solution built with React and Node.js',
-      image: '/images/ecommerce.png',
+      image: 'url[/images/ecommerce.png]',
       github: 'https://github.com/RajaweluPriyasha?tab=repositories',
       demo: 'https://www.linkedin.com/posts/priyasha-rajavelu-012122273_react-mongodb-ecommerce-activity-7284502690976382976-p3kp?utm_source=share&utm_medium=member_desktop'
     },
     {
       title: 'FOT Lab Reservation',
       description: 'Creating a beautiful and intuitive lab reservation system involves designing an application with a user-friendly interface and efficient functionality.',
-      image: '/images/mobileapplication.png',
+      image: 'url[/images/mobileapplication.png]',
       github: 'https://github.com/RajaweluPriyasha?tab=repositories',
       demo: 'https://www.linkedin.com/posts/priyasha-rajavelu-012122273_flutter-frontenddevelopment-groupproject-activity-7285620788785819648-uWic?utm_source=share&utm_medium=member_desktop'
     },
@@ -145,7 +145,7 @@ function App() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img
-                src="/images/Asha.jpeg"
+                src="url[/images/Asha.jpeg]"
                 alt="Profile"
                 className="rounded-lg shadow-xl w-[500px] h-[500px] transition-transform duration-500 hover:scale-110 hover:rotate-3 hover:shadow-2xl hover:opacity-90"
               />
