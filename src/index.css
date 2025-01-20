@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 1s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s infinite;
+}
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.skill-bar {
+  animation: fillProgress 2s ease-out forwards;
+}
+/* Fade-in animation for the heading */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+/* Slide-in animation for skill items */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.8s ease-out forwards;
+  opacity: 0; /* Hidden before animation starts */
+}
+
+/* Progress bar animations dynamically */
+@keyframes progress-bar-0 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%; /* Replace with the first skill level */
+  }
+}
+
+@keyframes progress-bar-1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%; /* Replace with the second skill level */
+  }
+}
+
+@keyframes progress-bar-2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%; /* Replace with the third skill level */
+  }
+}
+
+
+@keyframes progress-bar-3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%; /* Replace with the third skill level */
+  }
+}
+
+@keyframes progress-bar-4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%; /* Replace with the third skill level */
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
