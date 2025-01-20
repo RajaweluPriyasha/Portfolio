@@ -13,6 +13,18 @@ import {
   Phone
 } from 'lucide-react';
 import ContactForm from './contact.tsx';
+import Navbar from './navbar';
+import SkillsSection from './skill';
+
+const skills = [
+  { name: 'React', level: 90 },
+  { name: 'TypeScript', level: 85 },
+  { name: 'Node.js', level: 80 },
+  { name: 'Python', level: 75 },
+  { name: 'UI/UX Design', level: 85 }
+];
+
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -41,13 +53,7 @@ function App() {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const skills = [
-    { name: 'React', level: 90 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'Node.js', level: 80 },
-    { name: 'Python', level: 75 },
-    { name: 'UI/UX Design', level: 85 }
-  ];
+ 
 
   const projects = [
     {
@@ -73,31 +79,14 @@ function App() {
     }
   ];
 
+ 
   return (
     <div className="font-mono">
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
-        <div className="container mx-auto px-6 py-4 bg-white-500">  {/* Added background color for visibility */}
-          <div className="flex items-center justify-between">
-            <img src="/images/name logo image.png" alt="Portfolio" className="w-34 h-16" />
-            <div className="flex space-x-8"> {/* Changed hidden md:flex to just flex */}
-              {['home', 'about', 'education', 'skills', 'projects', 'contact'].map((section) => (
-                <button
-                  key={section}
-                  onClick={() => scrollToSection(section)}
-                  className={`relative capitalize ${activeSection === section ? 'text-blue-600 font-semibold' : 'text-gray-600 hover:text-blue-600'} transition-all duration-300 group`}
-                >
-                  {section}
-                  <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-transparent h-1 w-0 transition-all duration-500 ease-out group-hover:w-full`}>
-                    <div className="w-full h-1 bg-gradient-to-r from-transparent via-blue-600 to-transparent bg-repeat-x"></div>
-                  </div>
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </nav>
-
+      <div>
+        <Navbar/>
+       
+        <div/>
 
 
 
@@ -200,50 +189,9 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 animate-fade-in-up">
-            Skills
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="mb-8 animate-slide-in"
-                style={{
-                  animationDelay: `${index * 0.2}s`, // Delayed animation for each skill
-                }}
-              >
-                <div className="flex justify-between mb-2">
-                  <span className="text-lg font-semibold">{skill.name}</span>
-                  <span className="text-red-500">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
-                  <div
-                    className="bg-blue-700 h-2.5 rounded-full progress-bar-animation transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg"
-                    style={{
-                      width: `${skill.level}%`, // Adjust width based on skill level
-                      animation: `progress-bar-${index} 1.2s ease-out forwards`,
-                      transition: 'background-color 0.3s ease', // Smooth transition
-                    }}
-                    onMouseEnter={(e) => {
-                      const target = e.target as HTMLDivElement; // Type casting
-                      target.style.backgroundColor = '#FF6347'; // Change color on hover
-                    }}
-                    onMouseLeave={(e) => {
-                      const target = e.target as HTMLDivElement; // Type casting
-                      target.style.backgroundColor = '#004d7a'; // Reset to original color
-                    }}
-                  ></div>
-
-                </div>
-              </div>
-            ))}
-          </div>
+      <div>
+      <SkillsSection skills={skills} />
         </div>
-      </section>
-
-      {/* Projects Section */}
 
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-blue-50">
@@ -324,6 +272,7 @@ function App() {
           </div>
         </div>
       </footer>
+    </div>
     </div>
   );
 }
