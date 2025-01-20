@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // Function for smooth scrolling to sections
   const scrollToSection = (section: string) => {
     const element = document.getElementById(section);
     if (element) {
@@ -16,10 +17,17 @@ export default function Navbar() {
     setIsScrolled(window.scrollY > 50);
   };
 
-  // Listen for scroll events
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", handleScroll);
-  }
+  // Set up scroll event listener
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const sections = [
     { name: "home", icon: "M4 6h16M4 12h16M4 18h16" },
@@ -71,7 +79,7 @@ export default function Navbar() {
             <button
               key={section.name}
               onClick={() => scrollToSection(section.name)}
-              className="capitalize text-gray-600 hover:text-blue-600 px-6"
+              className="capitalize text-gray-600 hover:text-blue-600 px-6 relative group"
             >
               {section.name}
               <div
