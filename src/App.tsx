@@ -53,7 +53,7 @@ function App() {
     {
       title: 'Mini E-Commerce Platform',
       description: 'A full-stack e-commerce solution built with React and Node.js',
-      image: '/dist/assets/images/ecommerce.png',
+      image: '/images/ecommerce.png',
       github: 'https://github.com/RajaweluPriyasha?tab=repositories',
       demo: 'https://www.linkedin.com/posts/priyasha-rajavelu-012122273_react-mongodb-ecommerce-activity-7284502690976382976-p3kp?utm_source=share&utm_medium=member_desktop'
     },
