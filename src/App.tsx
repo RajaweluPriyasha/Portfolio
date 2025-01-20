@@ -104,15 +104,17 @@ function App() {
               <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-slide-up-delay">
                 Software Developer & UI/UX Designer
               </p>
+              <div className="flex justify-center items-center">
               <a
                 href="/images/Rajawelu Priyasha CV.pdf"
                 download="Rajawelu_Priyasha_CV"
-                className="flex justify-center items-center text-white text-sm font-semibold px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 border-2 border-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 hover:border-blue-900 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-sm hover:shadow-md"
+                className="text-white text-xs font-semibold px-6 py-2 w-24 rounded-lg bg-gradient-to-r from-blue-900 via-white-600 to-blue-700 border-2 border-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 hover:border-blue-900 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-sm hover:shadow-md"
               >
                 <span>
                   Download My CV
                 </span>
               </a>
+              </div>
 
 
 
