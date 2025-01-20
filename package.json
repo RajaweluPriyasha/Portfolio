@@ -1,5 +1,5 @@
 {
-  "homepage": "https://RajaWeluPriyasha.github.io/Portfolio",
+  "homepage": "https://RajaweluPriyasha.github.io/Portfolio",
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@eslint/js": "^9.9.1",
     "@types/aos": "^3.0.7",
+    "@types/node": "^22.10.7",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
