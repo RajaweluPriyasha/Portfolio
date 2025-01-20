@@ -60,14 +60,14 @@ function App() {
     {
       title: 'FOT Lab Reservation',
       description: 'Creating a beautiful and intuitive lab reservation system involves designing an application with a user-friendly interface and efficient functionality.',
-      image: '/dist/assets/images/mobileapplication.png',
+      image: '/images/mobileapplication.png',
       github: 'https://github.com/RajaweluPriyasha?tab=repositories',
       demo: 'https://www.linkedin.com/posts/priyasha-rajavelu-012122273_flutter-frontenddevelopment-groupproject-activity-7285620788785819648-uWic?utm_source=share&utm_medium=member_desktop'
     },
     {
       title: 'Automatic Door Lock System',
       description: 'Led testing and quality assurance to ensure reliability and security, while designing automated locking mechanisms that prioritize user safety and operational efficiency.',
-      image: '/dist/assets/images/groupproject1 (1).jpeg',
+      image: '/images/groupproject1 (1).jpeg',
       github: 'https://github.com/RajaweluPriyasha?tab=repositories',
       demo: '#'
     }
@@ -103,7 +103,7 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-purple-50 to-pink-50">
-        <div className="absolute inset-0 bg-[url('/dist/assets/images/wal.jpg')] bg-cover bg-center opacity-15"></div>
+        <div className="absolute inset-0 bg-[url('/images/wal.jpg')] bg-cover bg-center opacity-15"></div>
         <div className="container mx-auto px-6 relative">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
@@ -115,7 +115,7 @@ function App() {
               Software Developer & UI/UX Designer
             </p>
             <a
-              href="/dist/assets/images/Rajawelu Priyasha CV.pdf"
+              href="/images/Rajawelu Priyasha CV.pdf"
               download="Rajawelu_Priyasha_CV"
               className="bg-gradient-to-r from-blue-900 to-blue-600 text-blue-900 px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-500 ease-in-out hover:from-blue-700 hover:to-blue-400 animate-pulse"
             >
@@ -145,7 +145,7 @@ function App() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img
-                src="/dist/assets/images/Asha.jpeg"
+                src="/images/Asha.jpeg"
                 alt="Profile"
                 className="rounded-lg shadow-xl w-[500px] h-[500px] transition-transform duration-500 hover:scale-110 hover:rotate-3 hover:shadow-2xl hover:opacity-90"
               />
