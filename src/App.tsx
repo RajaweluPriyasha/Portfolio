@@ -67,7 +67,7 @@ function App() {
     {
       title: 'Automatic Door Lock System',
       description: 'Led testing and quality assurance to ensure reliability and security, while designing automated locking mechanisms that prioritize user safety and operational efficiency.',
-      image: '/images/groupproject1 (1).jpeg',
+      image: 'url[/images/groupproject1 (1).jpeg]',
       github: 'https://github.com/RajaweluPriyasha?tab=repositories',
       demo: '#'
     }
