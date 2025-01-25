@@ -255,7 +255,7 @@ function App() {
           <div className="bg-gray-400 text-white py-12">
             <div className="container mx-auto px-6">
               {/* Flex container for "Connect with Me" and "Shortlinks" */}
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
+              <div className="flex flex-col md:flex-row-center justify-between items-start md:items-center space-y-8 md:space-y-0">
                 {/* "Connect with Me" Section */}
                 <div className="flex flex-col items-start space-y-4">
                   <h2 className="text-2xl font-semibold">Connect with Me</h2>
