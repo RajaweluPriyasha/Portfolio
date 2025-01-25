@@ -105,15 +105,15 @@ function App() {
                 Software Developer & UI/UX Designer
               </p>
               <div className="flex justify-center items-center">
-              <a
-                href="/images/Rajawelu Priyasha CV.pdf"
-                download="Rajawelu_Priyasha_CV"
-                className="text-white text-xs font-semibold px-6 py-2 w-24 rounded-lg bg-gradient-to-r from-blue-900 via-white-600 to-blue-700 border-2 border-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 hover:border-blue-900 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-sm hover:shadow-md"
-              >
-                <span>
-                  Download My CV
-                </span>
-              </a>
+                <a
+                  href="/images/Rajawelu Priyasha CV.pdf"
+                  download="Rajawelu_Priyasha_CV"
+                  className="text-white text-xs font-semibold px-6 py-2 w-24 rounded-lg bg-gradient-to-r from-blue-900 via-white-600 to-blue-700 border-2 border-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 hover:border-blue-900 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-sm hover:shadow-md"
+                >
+                  <span>
+                    Download My CV
+                  </span>
+                </a>
               </div>
 
 
@@ -255,11 +255,11 @@ function App() {
           <div className="bg-gray-400 text-white py-12">
             <div className="container mx-auto px-6">
               {/* Flex container for "Connect with Me" and "Shortlinks" */}
-              <div className="flex justify-between items-center mb-8">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
                 {/* "Connect with Me" Section */}
-                <div className="flex flex-col items-start space-y-2">
+                <div className="flex flex-col items-start space-y-4">
                   <h2 className="text-2xl font-semibold">Connect with Me</h2>
-                  <div className="flex space-x-6 mt-2">
+                  <div className="flex flex-wrap space-x-6 space-y-2 md:space-y-0 mt-2">
                     <a href="https://github.com/RajaweluPriyasha?tab=repositories" className="hover:text-blue-400 transition-colors duration-300">
                       <FaGithub className="w-6 h-6" />
                     </a>
