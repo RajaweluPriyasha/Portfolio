@@ -257,7 +257,7 @@ function App() {
               {/* Flex container for "Connect with Me" and "Shortlinks" */}
               <div className="flex justify-between items-center mb-8">
                 {/* "Connect with Me" Section */}
-                <div className="flex flex-col-1 items-start space-y-2">
+                <div className="flex flex-col items-start space-y-2">
                   <h2 className="text-2xl font-semibold">Connect with Me</h2>
                   <div className="flex space-x-6 mt-2">
                     <a href="https://github.com/RajaweluPriyasha?tab=repositories" className="hover:text-blue-400 transition-colors duration-300">
